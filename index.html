@@ -26,7 +26,7 @@
                      night or a cozy meal at home, Chobra soup will warm you up from the inside out.</p>
                 <p>Wanna try?</p>
             </div>
-            <form class="form" action="" method="get">
+            <form class="form" action="./approved.html" method="get">
                 <div class="form-item">
                     <input type="text" 
                     name="fname" 
@@ -65,20 +65,22 @@
                 </div>
                 <div class="form-item">
                     <input type="password" 
-                    class="error"
+                    class="error pwd-1"
                     name="pwd" 
                     id="pwd"
                     placeholder="Password *"
+                    pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W))(?!.*[ \t])(?=.*[A-Z])(?=.*[a-z]).*$"
                     required>
                     <label for="pwd">PASSWORD </label>
                     <span></span>
                 </div>
                 <div class="form-item">
                     <input type="password" 
-                    class="error"
+                    class="error pwd-2"
                     name="pwd2" 
                     id="pwd2"
                     placeholder="Confirm password *"
+                    pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W))(?!.*[ \t])(?=.*[A-Z])(?=.*[a-z]).*$"
                     required>
                     <label for="pwd2">CONFIRM PASSWORD </label>
                     <span></span>

@@ -241,6 +241,25 @@ button:hover {
 }
 
 
+input.error-message ~ span::after {
+    font-size: 14px;
+    content: "Password doesn't match!";
+    color: red;
+}
+
+input.error-message {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+input.error-message + label {
+    color: #b92326;
+}
+
+input.good:valid {
+    background-color: rgb(200, 241, 153);
+}
+
 
 
 
